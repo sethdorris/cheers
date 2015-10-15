@@ -46,9 +46,17 @@ namespace Cheers
             if (days < 0)
             {
                 days = days + 365;
+                System.Console.WriteLine("It is " + days + " days until your birthday");
+            } else {
+                System.Console.WriteLine("It is " + days + " days until your birthday");
+            }
+
+            if (birthday == now)
+            {
+                System.Console.WriteLine("Happy Birthday " + formattedName);
             }
            
-            System.Console.WriteLine("It is " + days + " days until your birthday");
+            
 
     
 
