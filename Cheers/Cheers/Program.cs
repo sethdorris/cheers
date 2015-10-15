@@ -33,7 +33,8 @@ namespace Cheers
             
 
             System.Console.WriteLine(capLetter + name.Substring(1) + " is Awesome!");
-            System.Console.WriteLine("Hey " + capLetter + name.Substring(1) + " What's your birthday? Enter as mm/dd");
+            string formattedName = capLetter + name.Substring(1);
+            System.Console.WriteLine("Hey " + formattedName + " What's your birthday? Enter as mm/dd");
             string userInput = System.Console.ReadLine();
             DateTime birthday = Convert.ToDateTime(userInput);
             DateTime now = DateTime.Now.Date;
